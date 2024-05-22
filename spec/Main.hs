@@ -1,5 +1,10 @@
 module Main (main) where
 
+import System.Exit (exitFailure, exitSuccess)
+
 main :: IO ()
-main = putStrLn "Test suite not yet implemented."
+main = do
+    if True /= True
+    then exitFailure 
+    else exitSuccess
 
